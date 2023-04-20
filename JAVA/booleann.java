@@ -1,5 +1,3 @@
-package JAVA;
-
 public class booleann {
   public static void main(String[] args) {
     int myAge = 25;

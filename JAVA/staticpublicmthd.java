@@ -1,5 +1,3 @@
-package JAVA;
-
 public class staticpublicmthd {
     // Static method
     static void myStaticMethod() {

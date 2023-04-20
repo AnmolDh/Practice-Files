@@ -1,5 +1,3 @@
-package JAVA;
-
 public class multipleClasses {
     public static void main(String[] args) {
         // from classes.java file

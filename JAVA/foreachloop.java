@@ -1,5 +1,3 @@
-package JAVA;
-
 public class foreachloop {
     public static void main(String[] args) {
         // For Each Loop

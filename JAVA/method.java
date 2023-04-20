@@ -1,5 +1,3 @@
-package JAVA;
-
 public class method {
 
     static void myMethod() {

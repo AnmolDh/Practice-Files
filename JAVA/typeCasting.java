@@ -1,5 +1,3 @@
-package JAVA;
-
 public class typeCasting {
     public static void main(String[] args){
         // wide casting

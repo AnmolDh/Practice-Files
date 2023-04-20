@@ -1,5 +1,3 @@
-package JAVA;
-
 public class multipleAttrib {
     String fname = "Anmol";
     String lname = "Dhiman";

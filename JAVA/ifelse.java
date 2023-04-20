@@ -1,5 +1,3 @@
-package JAVA;
-
 public class ifelse {
     public static void main(String[] args) {
         int time = 22;

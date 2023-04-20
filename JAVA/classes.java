@@ -1,5 +1,3 @@
-package JAVA;
-
 public class classes {
     int x = 5;
 
