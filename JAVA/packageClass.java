@@ -1,4 +1,5 @@
-package packageClassFolder;
+// uncomment this when compiling
+// package packageClassFolder;
 
 public class packageClass {
     public static void main(String[] args) {
