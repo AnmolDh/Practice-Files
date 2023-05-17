@@ -20,6 +20,9 @@ Currently, this repository contains practice files for the following languages:
 The following tools and technologies are used in the practice files:
 - Git
 - HTML/CSS
+- React
+- TypeScript
+- Vite
 - VS Code
 - Cisco Packet Tracer for Networks
 
