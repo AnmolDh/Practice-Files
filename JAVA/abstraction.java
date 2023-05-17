@@ -18,4 +18,4 @@ class abstraction {
         mypig.sound();
         mypig.sleep();
     }
-}
+} 
