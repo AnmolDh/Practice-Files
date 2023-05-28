@@ -21,6 +21,7 @@ The following tools and technologies are used in the practice files:
 - Git
 - HTML/CSS
 - React
+- Docker
 - TypeScript
 - Vite
 - VS Code
