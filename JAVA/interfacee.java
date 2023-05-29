@@ -4,7 +4,7 @@ interface animal {
     public void run();
 }
 
-class pig implements animal {
+class pigf implements animal {
     public void sound() {
         System.out.println("wee wee");
     }
@@ -16,7 +16,7 @@ class pig implements animal {
 
 public class interfacee {
     public static void main(String[] args) {
-        pig mypig = new pig();
+        pigf mypig = new pigf();
         mypig.sound();
         mypig.run();
     }
