@@ -10,9 +10,8 @@ import java.util.*;
 
 public class q04 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        try{
+        try {
+            Scanner sc = new Scanner(System.in);
         int runs = sc.nextInt();
         int overs = sc.nextInt();
 
