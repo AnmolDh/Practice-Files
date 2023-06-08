@@ -48,26 +48,48 @@
 // -4 - 4 = - 8
 // -8 - 5 = - 13
 
+
 import java.util.Scanner;
 
 public class q17 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] arr = new int[4];
-        int max = -999;
-        int min = 999;
-        int sub = 0;
+        try{
+            Scanner sc = new Scanner(System.in);
+            int[] arr = new int[5];
+            int max = -999;
+            int min = 999;
+            int sub;
 
-        for (int i = 0; i < 4; i++) {
-            arr[i] = sc.nextInt();
-            max = Math.max(max, i);
-            min = Math.min(min, i);
-            sub -= arr[i];
+            for (int i = 0; i < 5; i++) {
+                arr[i] = sc.nextInt();
+                max = Math.max(max, arr[i]);
+                min = Math.min(min, arr[i]);
+            }
+
+            sub = arr[0];
+            for (int i = 1; i < 5; i++) {
+                sub -= arr[i];
+            }
+
+            System.out.println(max);
+            System.out.println(min);
+            System.out.println(sub);
+            
+            if (sub >= 0) {
+                throw new subException("Subtract is greater than equal to Zero");
+            }
+            if (sub < 0){
+                throw new subException("Subtract is less than Zero");
+            }
         }
+        catch(subException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
 
-        System.out.println("");
-        System.out.println();
-        System.out.println();
-        
+class subException extends Exception {
+    public subException(String msg) {
+        super(msg);
     }
 }
