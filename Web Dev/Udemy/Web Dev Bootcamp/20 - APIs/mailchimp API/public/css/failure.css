@@ -1,0 +1,42 @@
+body,
+button {
+    background: #F5F1E3;
+    font-family: 'Armata', sans-serif;
+}
+
+@mixin scaleTransistion($val) {
+    -ms-transform: scale($val);
+    -moz-transform: scale($val);
+    -webkit-transform: scale($val);
+    transform: scale($val);
+}
+
+.errorModule {
+    margin: 40px auto 20px;
+    text-align: center;
+    color: #A80000;
+
+    .errorIcon {
+        font-size: 34px;
+        margin: 15px;
+        animation: animateIcon 5s infinite;
+    }
+
+    .errorMsg {
+        font-size: 14px;
+    }
+
+    @keyframes animateIcon {
+        0% {
+            @include scaleTransistion(1)
+        }
+
+        50% {
+            @include scaleTransistion(2);
+        }
+
+        100% {
+            @include scaleTransistion(1)
+        }
+    }
+}
