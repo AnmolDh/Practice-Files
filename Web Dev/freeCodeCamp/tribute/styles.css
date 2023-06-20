@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+#title{
+    text-align: center;
+    margin: 15px;
+    padding-top: 30px;
+}
+
+#subtitle{
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+#image{
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+}
+
+figcaption{
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+#tribute-info{
+    width: 80%;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+#tribute-info h3{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    padding: 0 5px;
+}
+
+ul{
+    width: 80%;
+    max-width: 100%;
+    margin: auto auto 20px auto;
+    padding: 0 5px;
+}
+
+li{
+    margin: 10px 0;
+}
+
+blockquote{
+    font-family: monospace;
+    width: 80%;
+    max-width: 100%;
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+
+#source{
+    text-align: center;
+    padding: 20px;
+}
+
+#tribute-link{
+    text-decoration: none;
+    color: black;
+}
+
+blockquote:nth-of-type(2){
+    font-family: "Alkatra", sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+    #tribute-info {
+        width: 100%;
+    }
+}

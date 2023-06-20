@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Roboto+Slab&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: none;
+    visibility: hidden;
+}
+
+.note{
+    font-family: sans-serif, serif;
+    text-align: center;
+}
+
+.note a{
+    color: whitesmoke;
+
+}
+
+.nav-container{
+    display: flex;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Geologica;
+    color: #f3cd74;
+}
+
+#navbar{
+    position: fixed;
+    width: 80%;
+    background-color: black;
+}
+
+#nav-logo{
+    cursor: default;
+}
+
+#nav-links li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 4vw;
+}
+
+#nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-links a:hover{
+    transition: 100ms ease-in;
+    color: #f3cd74;
+}
+
+
+.hero-container{
+    display: flex;
+    margin: 0 10px;
+    font-family: Geologica;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#hero-head{
+    flex: 1;
+    font-size: 2rem;
+
+    cursor: default;
+}
+
+#hero-head h1{
+    color: #f3cd74;
+    margin: 0;
+}
+
+#hero-subhead p{
+    font-family: "Roboto Slab";
+    margin: 0;
+}
+
+#hero-subhead span{
+    text-decoration: underline;
+}
+
+.summ-container{
+    padding-top: 50px;
+    margin: 0 10%;
+    color: #f3cd74;
+    font-family: Geologica;
+    font-size: 1.5rem;
+    height: 90vh;
+}
+
+.summ-container h1{
+    margin: 10% 0 0 0;
+    padding: 0;
+}
+
+#summ-text{
+    color: white;
+    font-family: "Roboto Slab";
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+footer{
+    text-align: center;
+    font-size: smaller;
+}
+
+
+@media (max-width: 768px){
+    .hero-container{
+        margin: 0;
+    }
+}

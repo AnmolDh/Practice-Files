@@ -1,9 +1,0 @@
-FROM node:alpine
-
-WORKDIR /react
-
-COPY . /react/
-
-RUN npm install
-
-CMD [ "npm", "run", "dev" ]

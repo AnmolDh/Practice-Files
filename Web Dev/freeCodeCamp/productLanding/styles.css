@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+
+html, body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+#header-img{
+    width: 150px;
+    margin-left: 80px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 80px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.container{
+    padding-top: 80px;
+}
+
+.hero{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: -10px auto 20px auto;
+}
+
+#email{
+    padding: 5px;
+}
+
+#submit{
+    padding: 10px;
+    background-color: burlywood;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.product{
+    width: 60%;
+    margin: 100px auto;
+}
+
+.product h3{
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+#video{
+    display: block;
+    margin: auto;
+}
+
+
+.pricing{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.pricing h3{
+    border-bottom: 1px solid gray;
+    text-transform: uppercase;
+    background-color: #bfbfbf;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.price1, .price2, .price3{
+    background-color: #eee;
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 20px;
+}
+
+.pricing ul{
+    list-style: none;
+    padding: 10px 40px;
+}
+
+.pricing button{
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: burlywood;
+    font-weight: bold;
+    border: none;
+}
+
+footer{
+    padding: 10px;
+    margin: 50px 50px 0 50px;
+    background-color: #bfbfbf;
+    font-family: Alkatra, sans-serif;
+}
+
+@media (max-width: 768px){
+    #header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-img {
+        width: 150px;
+        min-width: 100px;
+        margin: auto;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: auto;
+    }
+
+    .container {
+        padding-top: 160px;
+    }
+
+    .product{
+        text-align: center;
+    }
+
+    .video{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #video{
+        width: 90%;
+    }
+
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price1, .price2, .price3{
+        max-width: 300px;
+    }
+
+    footer{
+        margin: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    blockquote{
+        margin: 0;
+    }
+}

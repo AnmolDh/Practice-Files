@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=1060&t=st=1687081621~exp=1687082221~hmac=299194552334811044330a3192f0b3ca82de1acf047a403e5824d828d0e9e7d5");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#title {
+    text-align: center;
+    margin: 10px;
+    font-size: 3rem;
+    color: white;
+}
+
+#description{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+form{
+    background-color: rgba(173, 216, 230, 0.667);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+}
+
+fieldset{
+    margin: 10px;
+    border: none;
+}
+
+label{
+    display: block;
+}
+
+input:not([type="radio"], [type="checkbox"]), textarea, select{
+    width: 95%;
+    height: 2rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid lightblue;
+    padding: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+    width: 15px;
+    
+}
+
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    background-color: lightblue;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(117, 199, 226);
+}
+
+blockquote {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-family: "Alkatra", sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.667);
+}
+
+
+
+@media (max-width: 768px){
+    form{
+        width: 80%;
+    }
+}

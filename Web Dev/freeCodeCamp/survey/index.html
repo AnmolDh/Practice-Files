@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Panda</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Survey Panda</h1>
+        <p id="description">Thanks for your Time</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="email" id="email-label">E-Mail</label>
+                <input type="email" id="email" placeholder="Enter your Email Address" required>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="18" max="60" placeholder="Enter your Age" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option selected disabled>Select one</option>
+                    <option>Student</option>
+                    <option>Employed</option>
+                    <option>Unemployed</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="radio">Do you watch anime?</label>
+                <label for="radio1"><input type="radio" id="radio1" name="carOwner" value="yes">Yes</label>
+                <label for="radio2"><input type="radio" id="radio2" name="carOwner" value="no">No</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="check">What describes you best?</label>
+                <label for="check1"><input type="checkbox" value="a" id="check1">Antagonist</label>
+                <label for="check2"><input type="checkbox" value="b" id="check2">Protagonist</label>
+                <label for="check3"><input type="checkbox" value="c" id="check3">Misogynist</label>
+                <label for="check4"><input type="checkbox" value="d" id="check4">Confidant</label>
+                <label for="check5"><input type="checkbox" value="e" id="check5">Deuteragonist</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="textarea">Why do you think this describes you the best?</label>
+                <textarea rows="3" cols="10"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit">
+        </form>
+
+        <footer>
+            <blockquote>"Disclaimer: Please note that the UI and code of this website was created as part of a certification project and does not
+            fully represent my true skills and capabilities. It was developed within the context of the project
+            requirements and constraints, and I approached it with a lighthearted manner."</blockquote>
+        </footer>
+    </main>
+</body>
+
+</html>
