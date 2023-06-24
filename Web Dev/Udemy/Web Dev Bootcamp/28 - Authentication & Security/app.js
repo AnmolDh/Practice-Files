@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const md5 = require("md5");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const app = express();
 
@@ -33,14 +34,16 @@ app.get("/login", function (req, res) {
 });
 
 app.post("/register", function (req, res) {
-    const user = new User({
-        email: req.body.username,
-        password: md5(req.body.password)
-    });
-    user.save().then(function () {
-        res.render("secrets");
-    }).catch(function (err) {
-        console.log(err);
+    bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
+        const user = new User({
+            email: req.body.username,
+            password: hash
+        });
+        user.save().then(function () {
+            res.render("secrets");
+        }).catch(function (err) {
+            console.log(err);
+        });
     });
 });
 
@@ -49,12 +52,14 @@ app.post("/login", function (req, res) {
         { email: req.body.username }
     ).then(function (r) {
         if (r) {
-            if (r.password === md5(req.body.password)) {
-                res.render("secrets");
-            }
-            else {
-                console.log("wrong password");
-            }
+            bcrypt.compare(req.body.password, r.password, function (err, result) {
+                if (result) {
+                    res.render("secrets");
+                }
+                else {
+                    console.log("wrong password");
+                }
+            });
         }
         else {
             res.redirect("/register");
