@@ -27,7 +27,8 @@ mongoose.connect("mongodb://localhost:27017/authDB");
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
-    googleId: String
+    googleId: String,
+    secret: String
 });
 
 userSchema.plugin(passportLocalMongoose);
@@ -85,11 +86,19 @@ app.get("/login", function (req, res) {
 });
 
 app.get("/secrets", function (req, res) {
+    User.find({secret: {$ne: null}}).then(function (r) {
+        res.render("secrets", { userWithSecret: r });
+    }).catch(function (err) {
+        console.log(err);
+    })
+});
+
+app.get("/submit", function (req, res) {
     if (req.isAuthenticated()) {
-        res.render("secrets");
+        res.render("submit");
     }
     else {
-        res.redirect("login");
+        res.redirect("/login");
     }
 });
 
@@ -100,6 +109,22 @@ app.get("/logout", function (req, res) {
         }
         res.redirect("/");
     });
+});
+
+app.post("/submit", function (req, res) {
+    const submittedSecret = req.body.secret;
+    User.findById(req.user.id).then(function (r) {
+        if (r) {
+            r.secret = submittedSecret;
+            r.save();
+            res.redirect("/secrets");
+        }
+        else {
+            res.redirect("/login");
+        }
+    }).catch(function (err) {
+        console.log(err);
+    })
 });
 
 app.post("/register", function (req, res) {
