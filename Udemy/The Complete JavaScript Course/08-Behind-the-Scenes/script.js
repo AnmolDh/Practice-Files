@@ -1,6 +1,7 @@
 "use strict";
 
 /*
+////////////////////////////////////////////////////////////
 function calcAge(birthYear) {
   // console.log(firstName);
   function printAge() {
@@ -29,6 +30,7 @@ calcAge(2003);
 */
 
 /*
+////////////////////////////////////////////////////////////
 // varibales
 console.log(me);
 console.log(job);
@@ -73,6 +75,7 @@ console.log(x === window.z);
 */
 
 /*
+////////////////////////////////////////////////////////////
 console.log(this);
 
 const calcAge = function (birthYear) {
@@ -108,6 +111,7 @@ Sus.calcAge();
 */
 
 /*
+////////////////////////////////////////////////////////////
 const anmol = {
   firstName: "Anmol",
   year: 2003,
@@ -151,6 +155,7 @@ addArrow(1, 1);
 */
 
 /*
+////////////////////////////////////////////////////////////
 // primitive
 let age = 18;
 let oldAge = age;
@@ -171,6 +176,7 @@ console.log(friend); // {name: 'Anmol', age: 18}
 */
 
 /*
+////////////////////////////////////////////////////////////
 // primitive types
 let lastName = "blah";
 let oldLastName = lastName;

@@ -1,6 +1,7 @@
 "use strict";
 
 /*
+////////////////////////////////////////////////////////////
 const temp1 = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 const temp2 = [2, 33, 12, -1];
 
@@ -23,6 +24,7 @@ calcTempAmp(temp1, temp2);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const measureKelvin = () => {
   const measurement = {
     type: "temp",
@@ -43,6 +45,7 @@ console.log(measureKelvin());
 */
 
 /*
+////////////////////////////////////////////////////////////
 const printForecast = (temps) => {
   let str = "";
   for (let i = 0; i < temps.length; i++){

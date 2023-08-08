@@ -1,6 +1,7 @@
 "use strict";
 
 /*
+////////////////////////////////////////////////////////////
 let hasDriversLicence = false;
 const testPassed = true;
 
@@ -9,6 +10,7 @@ if (hasDriversLicence) console.log("you can drive")
 */
 
 /*
+////////////////////////////////////////////////////////////
 // function
 function logger() {
   console.log("logged via function");
@@ -23,6 +25,7 @@ console.log(fruitProcessor(1, 2));
 */
 
 /*
+////////////////////////////////////////////////////////////
 // Function Decelaration
 function calcAge1(birthYear) {
   return 2023 - birthYear;
@@ -51,6 +54,7 @@ console.log(yearsUntilRetirement(2003, 60));
 */
 
 /*
+////////////////////////////////////////////////////////////
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
@@ -66,6 +70,7 @@ console.log(fruitProcessor(2, 3));
 */
 
 /*
+////////////////////////////////////////////////////////////
 const calcAvg = (x, y, z) => (x + y + z) / 3;
 const dolphinsAvg = calcAvg(44, 23, 71);
 const koalasAvg = calcAvg(65, 54, 49);
@@ -83,6 +88,7 @@ checkWinner(dolphinsAvg, koalasAvg);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const year = new Array(2003, 2001, 2004);
 
 const friends = ["John", "Shawn", "Kevin"];
@@ -107,6 +113,7 @@ console.log(ages);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const friends = ["John", "Shawn", "Kevin"];
 
 // Add Element
@@ -136,6 +143,7 @@ if (friends.includes("John")) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 const calcTip = (bill) => {
   if (bill >= 50 && bill <= 300) {
     return (bill / 100) * 15;
@@ -153,6 +161,7 @@ console.log(total);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const anmol = {
   firstName: "Anmol",
   lastName: "Dhiman",
@@ -185,6 +194,7 @@ console.log(
 */
 
 /*
+////////////////////////////////////////////////////////////
 const anmol = {
   firstName: "Anmol",
   lastName: "Dhiman",
@@ -219,6 +229,7 @@ console.log(anmol.getSummary());
 */
 
 /*
+////////////////////////////////////////////////////////////
 const mark = {
   fullName: "Mark Miller",
   mass: 78,
@@ -250,6 +261,7 @@ if (mark.calcBMI() > john.calcBMI()) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
@@ -285,6 +297,7 @@ for (let i = 1; i <= 3; i++) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 let rep = 1;
 while (rep <= 15) {
   console.log(rep);
@@ -300,6 +313,7 @@ while (dice !== 6) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];

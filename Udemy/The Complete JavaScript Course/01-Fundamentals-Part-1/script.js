@@ -1,4 +1,5 @@
 /*
+////////////////////////////////////////////////////////////
 let js = "amazing";
 
 console.log(40 + 2 + 43 + 5);
@@ -13,6 +14,7 @@ console.log(continent, country, population)
 */
 
 /*
+////////////////////////////////////////////////////////////
 let jsIsBad = false;
 console.log(jsIsBad);
 console.log(typeof jsIsBad);
@@ -32,6 +34,7 @@ console.log(typeof null)
 */
 
 /*
+////////////////////////////////////////////////////////////
 let age = 19;
 age = 20;
 
@@ -49,6 +52,7 @@ console.log(continent, country, language, population);
 */
 
 /*
+////////////////////////////////////////////////////////////
 // Math Operators
 const anmolAge = 2023 - 2003;
 console.log(anmolAge);
@@ -94,6 +98,7 @@ console.log(
 */
 
 /*
+////////////////////////////////////////////////////////////
 let x, y, z;
 x = y = 25 - 10 - 5;
 console.log(x, y);
@@ -105,6 +110,7 @@ console.log((x + y) / 2);
 */
 
 /*
+////////////////////////////////////////////////////////////
 let markWeight = 78;
 let markHeight = 1.69;
 let johnWeight = 92;
@@ -118,6 +124,7 @@ console.log(markHigherBMI);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const firstName = "Anmol";
 const job = "Student";
 const birthYear = 2003;
@@ -144,6 +151,7 @@ console.log(
 */
 
 /*
+////////////////////////////////////////////////////////////
 const age = 14;
 if (age >= 18) {
   console.log("can get a driving licence");
@@ -175,6 +183,7 @@ if (markHigherBMI) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 // Type Conversion
 const inputYear = "2003";
 console.log(Number(inputYear) - 3);
@@ -190,6 +199,7 @@ console.log("20" - "5" - 10);
 */
 
 /*
+////////////////////////////////////////////////////////////
 const age = 18;
 if (age === 18) console.log(":D (strict)");
 if (age == "18") console.log(":D (loose)");
@@ -214,6 +224,7 @@ if (numNeighbours === 1) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 console.log(true && true);
 console.log(true && false);
 console.log(true || true);
@@ -238,6 +249,7 @@ if (dolphinsAvg >= 100 && dolphinsAvg > koalasAvg) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 const day = "sunday";
 switch (day) {
   case "monnday":
@@ -254,6 +266,7 @@ switch (day) {
 */
 
 /*
+////////////////////////////////////////////////////////////
 const age = 18;
 const drink = age >= 18 ? "wine" : "water";
 console.log(drink);
