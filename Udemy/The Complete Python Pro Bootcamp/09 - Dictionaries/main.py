@@ -23,7 +23,7 @@ me["name"] = "Anmol Dhiman"
 
 # loop through dictionary
 for key in me:
-    print(f"{key}: {me[key]}")
+  print(f"{key}: {me[key]}")
 
 
 student_scores = {
@@ -35,15 +35,15 @@ student_scores = {
 }
 student_grades = {}
 for student in student_scores:
-    score = student_scores[student]
-    if score > 90:
-        student_grades[student] = "Outstanding"
-    elif score > 80:
-        student_grades[student] = "Exceeds Expectations"
-    elif score > 70:
-        student_grades[student] = "Acceptable"
-    else:
-        student_grades[student] = "Fail"
+  score = student_scores[student]
+  if score > 90:
+    student_grades[student] = "Outstanding"
+  elif score > 80:
+    student_grades[student] = "Exceeds Expectations"
+  elif score > 70:
+    student_grades[student] = "Acceptable"
+  else:
+    student_grades[student] = "Fail"
 print(student_grades)
 
 
@@ -101,11 +101,11 @@ travel_log = [
 
 
 def add_new_country(co, v, ci):
-    travel_log.append({
-        "country": co,
-        "visits": v,
-        "cities": ci
-    })
+  travel_log.append({
+      "country": co,
+      "visits": v,
+      "cities": ci
+  })
 
 
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])

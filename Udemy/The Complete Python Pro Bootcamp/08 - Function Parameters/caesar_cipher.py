@@ -27,13 +27,13 @@ shift = int(input("Type the shift number:\n"))
 
 
 def caesar(text, shift, dir):
-    end_text = ""
-    if dir == "decode":
-        shift *= -1
-    for letter in text:
-        i = alphabet.index(letter)
-        end_text += alphabet[i + shift]
-    print(end_text)
+  end_text = ""
+  if dir == "decode":
+    shift *= -1
+  for letter in text:
+    i = alphabet.index(letter)
+    end_text += alphabet[i + shift]
+  print(end_text)
 
 
 caesar(text, shift, direction)
