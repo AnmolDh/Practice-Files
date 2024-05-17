@@ -4,9 +4,9 @@
     {
       "label": "compile",
       "type": "shell",
-      "command": "gcc",
+      "command": "g++",
       "args": [
-        "-std=c11",
+        "-std=c++17",
         "-o",
         "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "${file}"
@@ -19,7 +19,7 @@
     {
       "label": "compile and run",
       "type": "shell",
-      "command": "mkdir -p ${workspaceFolder}/build && gcc -std=c11 -o ${workspaceFolder}/build/${fileBasenameNoExtension} ${file} && ${workspaceFolder}/build/${fileBasenameNoExtension} < ${workspaceFolder}/input.txt > ${workspaceFolder}/output.txt",
+      "command": "g++ -std=c++17 -o ${workspaceFolder}/build/${fileBasenameNoExtension} ${file} && ${workspaceFolder}/build/${fileBasenameNoExtension} < ${fileDirname}/input.txt > ${fileDirname}/output.txt",
       "group": {
         "kind": "build",
         "isDefault": true
